@@ -1,0 +1,26 @@
+/*index.html*/
+q {
+  quotes: none; /* Para quitar las comillas */
+  font-style: italic; /* Para poner en cursiva */
+}
+cite::before {
+  content: "«"; /* Inserta las comillas de apertura */
+}
+cite::after {
+  content: "»"; /* Inserta las comillas de cierre */
+}
+
+/*listado-nobel-literatura*/
+
+
+/*motivacion-premios*/
+q.motivacion {
+  quotes: "«" "»" "‹" "›";
+  font-style: italic;
+}
+q.motivacion::before {
+  content: open-quote;
+}
+q.motivacion::after {
+  content: close-quote;
+}
