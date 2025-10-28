@@ -1,3 +1,66 @@
+/*General*/
+body {
+  margin: 0;
+}
+.container{
+  width: 95%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+h1 > a{
+  font-size: 1.25em;
+}
+footer{
+  background-color: rgb(0, 0, 25);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 30px 35px;
+}
+
+header a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(240, 93, 80);
+}
+header a:hover{
+  color: rgba(240, 93, 80, 0.5);
+}
+nav ul a{
+  color: rgb(0, 0, 25);
+}
+nav ul a:hover{
+  color: rgba(0, 0, 25, 0.5);
+}
+nav ul{
+  list-style-type: none;
+}
+nav, header, .cabecera-dylan{
+  text-align: center;
+}
+
+.pag-actual{
+  font-weight: 700;
+}
+main{
+  font-family: Helvetica,Arial,sans-serif;
+}
+main p {
+  color: rgb(0, 0, 25);
+}
+figcaption,i,blockquote{
+  font-family: Georgia,'Times New Roman',Times,serif;
+}
+main a{
+  color: rgb(240, 93, 80);
+}
+main a:hover{
+  color: rgba(240, 93, 80, 0.5);
+}
+a{
+  text-decoration: none;
+}
+#flaticon {
+  color: white;
+}
 /*index.html*/
 q {
   quotes: none; /* Para quitar las comillas */
@@ -9,10 +72,114 @@ cite::before {
 cite::after {
   content: "»"; /* Inserta las comillas de cierre */
 }
-
+.cabecera-dylan > h2 {
+  font-size: 36px;
+}
+.cabecera-dylan > p {
+  width: 55%; /* El párrafo ocupará el 50% del ancho de su contenedor */
+  margin: 5px auto;
+  padding: 5px;
+  line-height: 1.5;
+}
+address {
+  font-style: normal;
+  font-size: 1.1em;
+}
+time{
+  text-transform: uppercase;
+  font-size: 0.75em;
+}
+.img-dylan{
+  padding-top: 40px;
+}
+.articulo{
+  margin: 15px;
+  padding-bottom: 40px;
+}
+.img-dylan > figcaption{
+  text-align: right;
+  font-size: 0.85em;
+  padding: 10px;
+}
+.destacado {
+  text-align: left;
+}
+.video-cancion{
+  margin: 25px;
+}
+.video-cancion > figcaption {
+  text-align: center;
+  padding: 10px;
+}
+.video-cancion > p{
+  text-align: center;
+}
+.articulo h3 {
+  font-size: 1.5em;
+}
+.poesia > blockquote {
+  line-height: 1.75;
+  font-size: 1.1em;
+  margin: 30px 30px 0 30px;
+}
+blockquote > cite{
+  font-style: italic;
+}
+.footer-main{
+  padding-top: 20px;
+}
 /*listado-nobel-literatura*/
+#premios{
+  padding: 10px;
+  display: block;
+  margin: 0 auto; /* Centra elementos de bloque */
+  max-width: 300px;
+}
+#fuente{
+  font-size: 0.75em;
+  text-align: right;
+  padding-right: 400px;
+  padding-bottom: 40px;
+}
+.nobel{
+  padding: 0 10px 10px 10px;
+  font-size: 14px;
+  text-align: center;
+}
+.nobel > h2{
+  font-size: 2.2em;
+}
+.uppercase{
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+ol li{
+  color: rgba(0, 0, 25, 0.5);
+}
+ol li > ul{
+  list-style-type: square;
+}
 
-
+ol > li{
+  list-style-type: none;
+  position: relative;
+  padding-left: 40px; /* Espacio para la imagen */
+  margin-bottom: 10px;
+}
+#premios a{
+  font-size: 0.9em;
+}
+ol > li::before{
+  content: url('../img/idioma.png');
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+}
+ol {
+  background-image: url('img/idioma.png');
+}
 /*motivacion-premios*/
 q.motivacion {
   quotes: "«" "»" "‹" "›";
@@ -23,4 +190,35 @@ q.motivacion::before {
 }
 q.motivacion::after {
   content: close-quote;
+}
+.motivacion-premios{
+  text-align: center;
+  padding-top: 40px;
+}
+.motivacion-premios > h2{
+  font-size: 2.25em;
+}
+dl{
+  text-align: left;
+  padding: 40px 0 40px 0;
+}
+dt{
+  padding: 25px;
+}
+dt > a {
+  font-weight: bold;
+}
+.year{
+  font-size: 1.2em;
+  color: grey;
+  font-weight: bold;
+}
+dd{
+  font-size: 0.9em;
+}
+.motivacion{
+  font-style: italic;
+}
+#fuente{
+  font-size: 0.8em;
 }
